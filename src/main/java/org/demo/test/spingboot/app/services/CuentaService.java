@@ -1,9 +1,9 @@
 package org.demo.test.spingboot.app.services;
 
-import org.demo.test.spingboot.app.models.Cuenta;
-
 import java.math.BigDecimal;
 import java.util.List;
+
+import org.demo.test.spingboot.app.models.Cuenta;
 
 public interface CuentaService {
 
@@ -20,6 +20,4 @@ public interface CuentaService {
     BigDecimal revisarSaldo(Long cuentaId);
 
     void transferir(Long numCuentaOrigen, Long numCuentaDestino, BigDecimal monto, Long bancoId);
-
-
 }

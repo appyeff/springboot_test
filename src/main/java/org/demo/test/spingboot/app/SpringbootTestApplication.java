@@ -7,7 +7,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 @SpringBootApplication
 public class SpringbootTestApplication {
-
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootTestApplication.class, args);
 	}

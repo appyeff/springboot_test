@@ -9,8 +9,8 @@ import java.util.Optional;
 
 public interface CuentaRepository extends JpaRepository<Cuenta, Long> {
 
-    //List<Cuenta> findAll();
-    //Optional<Cuenta> findById(Long id);
+    List<Cuenta> findAll();
+    Optional<Cuenta> findById(Long id);
     //void update(Cuenta cuenta);
 
     @Query("select c from Cuenta c where c.persona=?1")
