@@ -3,7 +3,6 @@ package org.demo.test.spingboot.app.models;
 import org.demo.test.spingboot.app.exceptions.DineroInsuficienteException;
 
 import javax.persistence.*;
-import javax.persistence.Table;
 import java.math.BigDecimal;
 import java.util.Objects;
 

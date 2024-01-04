@@ -72,7 +72,7 @@ public class CuentaServiceImpl implements CuentaService {
         cuentaDestino.credito(monto);
         cuentaRepository.save(cuentaDestino);
 
-        Banco banco = bancoRepository.findById(1L).orElseThrow();
+        Banco banco = bancoRepository.findById(bancoId).orElseThrow();
         int totalTransferencias = banco.getTotalTransferencias();
         banco.setTotalTransferencias(++totalTransferencias);
         bancoRepository.save(banco);
